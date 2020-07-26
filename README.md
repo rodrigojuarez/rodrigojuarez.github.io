@@ -1,4 +1,10 @@
-### Hi there 👋
+# About me
+
+- [My landing page](https://rodrigojuarez.com)
+
+# Useful resources
+
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 <!--
 **rodrigojuarez/rodrigojuarez** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
