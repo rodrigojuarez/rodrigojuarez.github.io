@@ -21,7 +21,7 @@
 title: Blog de Rodrigo Juarez
 author:
   name: Rodrigo Juarez
-email: info@rodrigojuarez.com
+  email: info@rodrigojuarez.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tecnologia y otros temas de mi interes
 baseurl: "" # the subpath of your site, e.g. /blog
