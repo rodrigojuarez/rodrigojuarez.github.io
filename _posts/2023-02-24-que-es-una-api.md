@@ -34,9 +34,7 @@ Para enviar nuestra solicitud, podemos utilizar cualquier cliente HTTP, como Pos
 
 Se puede ver en la siguiente imagen que luego de colocar la direccion <https://api.thecatapi.com/v1/images/search?limit=10> (1) y presionar el boton Send o Enviar (2) obtenemos la respuesta en formato JSON (3)
 
-![](/wp-content/uploads/2023/02/image.png)
-
-La respuesta es un conjunto de imagenes, en las que cada elemento tiene un identificador unico (id) la ubicacion de la imagen en internet (url), y el ancho (width) y alto (height) de la misma.
+<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2023/02/image.png?resize=782%2C404&ssl=1)</figure>La respuesta es un conjunto de imagenes, en las que cada elemento tiene un identificador unico (id) la ubicacion de la imagen en internet (url), y el ancho (width) y alto (height) de la misma.
 
 En esta misma api, si queremos ver todas las razas (breeds) disponibles, podemos realizar una llamada a <https://api.thecatapi.com/v1/breeds>
 
