@@ -4,14 +4,7 @@ title: 'Databinding Avanzado Parte 2: Converters'
 date: '2022-01-03T10:24:35-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://jesseliberty.com/?p=11560'
 permalink: /2022/01/03/advanced-databinding-part-2-converters/
-jabber_published:
-    - '1642113504'
-timeline_notification:
-    - '1642113505'
-publicize_twitter_user:
-    - rodrigojuarez
 image: /wp-content/uploads/2022/01/pexels-photo-270348.jpeg
 categories:
     - 'Advanced Data Binding'
@@ -44,7 +37,6 @@ Nuestro conversor es bastante comun. Debido a que queremos convertir un **int** 
 A continuacion, implementaremos el primer metodo **Convert**
 
 ```
-<pre class="wp-block-code">```
  public class IntToBoolConverter : IValueConverter
  {
      public object Convert(object value, 
@@ -54,14 +46,11 @@ A continuacion, implementaremos el primer metodo **Convert**
      {
          return (int)value!=0;
      }
-
-```
 ```
 
 Y para el **ConvertBack**, si el valor es **true**, devolveremos 1, sino, 0.
 
 ```
-<pre class="wp-block-code">```
 public object ConvertBack(object value,
     Type targetType, 
     object parameter,
@@ -69,8 +58,6 @@ public object ConvertBack(object value,
 {
     return (bool)value ? 1 : 0;
 }
-
-```
 ```
 
 # Usando el Converter
@@ -80,15 +67,11 @@ Nuestro codigo para probar el converter, es tan simple como puede serlo. Tenemos
 Comenzamos creando un **ResourceDictionary**, al inicio de nuestro archivo XAML (lo cual es habitual para recursos que solo van a utilizarse en solo una pagina).
 
 ```
-<pre class="wp-block-code">```
 <ContentPage.Resources>
 	<ResourceDictionary>
 		<local:IntToBoolConverter x:Key="intToBool" />
 	</ResourceDictionary>
 </ContentPage.Resources>
-
-
-```
 ```
 
 **Nota**: para recursos que se van a utilizar en muchas paginas, se puede colocar el recurso en un diccionario en el archivo **App.xaml**. Luego se puede utilizar de la misma manera, ya que todos los diccionarios se unen en tiempo de compilacion.
@@ -96,7 +79,6 @@ Comenzamos creando un **ResourceDictionary**, al inicio de nuestro archivo XAML 
 Notar que hemos asignado una clave al converter, lo que nos permite referenciarlo en nuestros archivos XAML.
 
 ```
-<pre class="wp-block-code">```
 <Entry
 	x:Name="SearchEntry"
 	Placeholder="Enter search term"
@@ -110,9 +92,6 @@ Notar que hemos asignado una clave al converter, lo que nos permite referenciarl
 	<strong>Converter={StaticResource intToBool}}"</strong>
 	Text="Search"
 	VerticalOptions="CenterAndExpand" />
-
-
-```
 ```
 
 El control **Entry** no sabe nada del converter, pero el boton si, por medio del enlace a la propiedad **IsEnabled**, utilizando el Path a **Text.Length** (cuantos caracteres tiene el texto). Para mas informacion sobre **Binding Paths**, ver el primer post de esta serie: [Paths](https://blog.rodrigojuarez.com/2021/12/29/11531/).

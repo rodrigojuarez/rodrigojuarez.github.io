@@ -1,19 +1,9 @@
 ---
-id: 57
 title: 'Azure Storage emulator for development in Windows 10'
 date: '2020-12-03T10:22:49-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'http://blog.rodrigojuarez.com/?p=57'
 permalink: /2020/12/03/azure-storage-emulator-for-development-in-windows-10/
-jabber_published:
-    - '1607001769'
-timeline_notification:
-    - '1607001769'
-publicize_linkedin_url:
-    - null
-publicize_twitter_user:
-    - rodrigojuarez
 categories:
     - Azure
     - Backend
@@ -31,7 +21,7 @@ There are several ways to install Azurite in your development machine like a Vis
 Open a powershell command prompt and use the following command to pull the latest Azurite docker image
 
 ```
-<pre class="wp-block-syntaxhighlighter-code">docker pull mcr.microsoft.com/azure-storage/azurite
+docker pull mcr.microsoft.com/azure-storage/azurite
 ```
 
 ## Run
@@ -39,11 +29,8 @@ Open a powershell command prompt and use the following command to pull the lates
 Run Azurite with the following powershell commands
 
 ```
-<pre class="wp-block-code">```
-`md c:\azurite`
-
+md c:\azurite
 docker run -p 10000:10000 -p 10001:10001 -v c:/azurite:/data mcr.microsoft.com/azure-storage/azurite
-```
 ```
 
 Now Azurite is ready to be used and you can use your Azure Storage Explorer to access your data or develop your apps.

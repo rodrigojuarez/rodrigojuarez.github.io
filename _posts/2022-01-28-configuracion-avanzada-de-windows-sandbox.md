@@ -4,14 +4,7 @@ title: 'Configuracion avanzada de Windows Sandbox'
 date: '2022-01-28T01:45:49-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=11584'
 permalink: /2022/01/28/configuracion-avanzada-de-windows-sandbox/
-jabber_published:
-    - '1643345149'
-timeline_notification:
-    - '1643345150'
-publicize_twitter_user:
-    - rodrigojuarez
 image: /wp-content/uploads/2022/01/pexels-photo-4160347.jpeg
 categories:
     - Backend
@@ -33,7 +26,6 @@ Utilizando cualquier editor de texto que nos permita trabajar con texto plano, p
 En el siguiente archivo de configuracion de ejemplo, vemos las opciones que tenemos disponibles, como la posibilidad de mapear una carpeta de la maquina host en una carpeta del Sandbox, o ejecutar un comando en el sandbox luego de que inicia. En el ejemplo, estamos ademas iniciando la instalacion de Visual Studio Community 2022 que ya tenemos previamente descargado en la computadora host.
 
 ```
-<pre class="wp-block-code">```
 <Configuration>
     <vGPU>Default</vGPU><!--Enable|Disable|Default-->
     <Networking>Default</Networking><!--Disable|Default-->
@@ -54,7 +46,6 @@ En el siguiente archivo de configuracion de ejemplo, vemos las opciones que tene
     <ClipboardRedirection>Default</ClipboardRedirection><!--Disable|Default-->
     <MemoryInMB>4096</MemoryInMB>
 </Configuration>
-```
 ```
 
 Luego de guardar el archivo en nuestro disco local con la extension .wsb podemos hacer doble click sobre el mismo, lo que iniciara **Windows Sandbox** y cargara las opciones establecidas.

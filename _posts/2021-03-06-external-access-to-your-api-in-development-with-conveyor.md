@@ -1,19 +1,9 @@
 ---
-id: 116
 title: 'External access to your API in development with Conveyor'
 date: '2021-03-06T15:11:50-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=116'
 permalink: /2021/03/06/external-access-to-your-api-in-development-with-conveyor/
-jabber_published:
-    - '1615054310'
-timeline_notification:
-    - '1615054311'
-publicize_twitter_user:
-    - rodrigojuarez
-publicize_linkedin_url:
-    - null
 image: /wp-content/uploads/2021/03/pexels-kindel-media-7054501.jpg
 categories:
     - Backend
@@ -30,6 +20,8 @@ I was looking for a quick fix when I found [Conveyor, a Visual Studio extension]
 After installing the extension, it would start when I run my project in Debug mode.  
 In the following screenshot, you can see which ones are the enabled endpoints.
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2021/03/conveyor_endpoints.png?resize=782%2C253&ssl=1)<figcaption>Enabled endpoints</figcaption></figure>  
+![](/wp-content/uploads/2021/03/conveyor_endpoints.png?resize=782%2C253&ssl=1)
+
+Enabled endpoints
 We can also enable the use of certificates for HTTPS access.  
 A great addition to my toolbox, easy to install and use 😉

@@ -1,19 +1,9 @@
 ---
-id: 11801
 title: 'Que es una API?'
 date: '2023-02-24T12:21:28-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=11801'
 permalink: /2023/02/24/que-es-una-api/
-jetpack_seo_noindex:
-    - ''
-jetpack_anchor_podcast:
-    - ''
-jetpack_anchor_episode:
-    - ''
-jetpack_anchor_spotify_show:
-    - ''
 image: /wp-content/uploads/2023/02/pexels-cong-h-1404819-1568x1046.jpg
 categories:
     - Basicos

@@ -4,14 +4,7 @@ title: 'Creando un instalador offline para Visual Studio'
 date: '2022-07-13T10:44:12-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=11606'
 permalink: /2022/07/13/creando-un-instalador-offline-para-visual-studio/
-jabber_published:
-    - '1657719852'
-timeline_notification:
-    - '1657719852'
-publicize_twitter_user:
-    - rodrigojuarez
 image: /wp-content/uploads/2022/07/0.jpg
 categories:
     - 'Visual Studio'
@@ -25,17 +18,15 @@ Habitualmente trabajo con mas de una computadora para desarrollo y ademas hago r
 
 En este post voy a detallar paso a paso como realizar todas estas operaciones y voy a utilizar la version 2022 Community preview al momento de escribir esto. Otras versiones funcionan en forma similar, descargando el archivo instalador de dicha version. Siempre se pueden consultar los parametros ejecutando en la linea de comandos el archivo instalador con el parametro **-?** lo cual nos abrira una pagina web local temporal con toda la informacion
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/07/image.png?resize=782%2C617&ssl=1)</figure>Primero necesitamos obtener el archivo de instalacion desde la pagina de [descarga de Visual Studio](https://visualstudio.microsoft.com/es/vs/preview/#download-preview) y guardarlo en un directorio local, en mi caso utilizare **c:\\VSOffline**
+![](/wp-content/uploads/2022/07/image.png?resize=782%2C617&ssl=1)Primero necesitamos obtener el archivo de instalacion desde la pagina de [descarga de Visual Studio](https://visualstudio.microsoft.com/es/vs/preview/#download-preview) y guardarlo en un directorio local, en mi caso utilizare **c:\\VSOffline**
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/07/image-1.png?resize=586%2C705&ssl=1)</figure>Luego debemos abrir una ventana de comandos en la carpeta en donde descargamos el instalador y ejecutar la siguiente instruccion que iniciara el (largo) proceso de descarga
+![](/wp-content/uploads/2022/07/image-1.png?resize=586%2C705&ssl=1)Luego debemos abrir una ventana de comandos en la carpeta en donde descargamos el instalador y ejecutar la siguiente instruccion que iniciara el (largo) proceso de descarga
 
 ```
-<pre class="wp-block-code">```
-`VisualStudioSetup --layout C:\VSOffline --lang en-US --add Microsoft.VisualStudio.Workload.NetCrossPlat --add Microsoft.VisualStudio.Workload.Universal --includeRecommended --includeOptional`
-```
+VisualStudioSetup --layout C:\VSOffline --lang en-US --add Microsoft.VisualStudio.Workload.NetCrossPlat --add Microsoft.VisualStudio.Workload.Universal --includeRecommended --includeOptional
 ```
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/07/image-4.png?resize=771%2C589&ssl=1)</figure>Parametros utilizados
+![](/wp-content/uploads/2022/07/image-4.png?resize=771%2C589&ssl=1)Parametros utilizados
 
 **–layout** es nuestra carpeta destino
 
@@ -54,17 +45,15 @@ Si ya tenemos nuestra carpeta con los archivos de instalacion y deseamos actuali
 En la misma ventana de comandos en la que ejecutamos el comando para descarga, corremos la siguiente instruccion
 
 ```
-<pre class="wp-block-code">```
 VisualStudioSetup --passive --norestart --includeOptional
-```
 ```
 
 Esto iniciara el proceso de instalacion, como se puede ver en la siguiente captura de pantalla. Los archivos no son descargados nuevamente, solo se verifica que esten disponibles.
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/07/image-6.png?resize=782%2C362&ssl=1)</figure>Si abrimos el instalador, podemos ver que se instalaron correctamente los flujos deseados
+![](/wp-content/uploads/2022/07/image-6.png?resize=782%2C362&ssl=1)Si abrimos el instalador, podemos ver que se instalaron correctamente los flujos deseados
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/07/image-7.png?resize=782%2C451&ssl=1)</figure>- - - - - -
+![](/wp-content/uploads/2022/07/image-7.png?resize=782%2C451&ssl=1)- - - - - -
 
-En un proximo post, voy a agregar informacion sobre como se puede automatizar aun mas el proceso y ademas como podemos utilizarlo junto a [Windows Sandbox](https://blog.rodrigojuarez.com/2022/01/28/ejecutar-aplicaciones-en-forma-segura-con-windows-sandbox/) para crear rapidamente entornos de desarrollo repetibles y que se encuentran siempre en el mismo estado incial.
+En un proximo post, voy a agregar informacion sobre como se puede automatizar aun mas el proceso y ademas como podemos utilizarlo junto a [Windows Sandbox](/2022/01/28/ejecutar-aplicaciones-en-forma-segura-con-windows-sandbox/) para crear rapidamente entornos de desarrollo repetibles y que se encuentran siempre en el mismo estado incial.
 
 Espero les haya sido de utilidad y les permita configurar sus equipos de desarrollo rapidamente!

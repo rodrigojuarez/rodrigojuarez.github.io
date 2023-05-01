@@ -1,10 +1,8 @@
 ---
-id: 11652
 title: 'Cambios en permisos para HealthKit en iOS 15'
 date: '2022-08-03T11:28:37-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=11652'
 permalink: /2022/08/03/cambios-en-permisos-para-healthkit-en-ios-15/
 image: /wp-content/uploads/2022/08/pexels-photo-2882668-1568x1043.jpeg
 categories:
@@ -32,6 +30,8 @@ Esto sucedia debido a que iOS a partir de su version 15, necesita de un nuevo en
 
 Luego de agregar **com.apple.developer.healthkit.background-delivery** a la lista de entitlements, todo comenzo a funcionar correctamente.
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/healthkit_0.jpg?resize=782%2C208&ssl=1)</figure>## Referencias
+![](/wp-content/uploads/2022/08/healthkit_0.jpg?resize=782%2C208&ssl=1)
 
-[https://developer.apple.com/documentation/bundleresources/entitlements/com\_apple\_developer\_healthkit\_background-delivery](https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_healthkit_background-delivery)
+## Referencias
+
+[Background Delivery](https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_healthkit_background-delivery)

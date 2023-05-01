@@ -4,14 +4,7 @@ title: 'Ejecutar aplicaciones en forma segura con Windows Sandbox'
 date: '2022-01-28T01:13:35-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=11572'
 permalink: /2022/01/28/ejecutar-aplicaciones-en-forma-segura-con-windows-sandbox/
-jabber_published:
-    - '1643343215'
-timeline_notification:
-    - '1643343215'
-publicize_twitter_user:
-    - rodrigojuarez
 image: /wp-content/uploads/2022/01/pexels-photo-7862529.jpeg
 categories:
     - Backend
@@ -56,7 +49,10 @@ Habilitar la virtualizacion
 
 En la seleccion de caracteristicas de Windows, habilitar **Windows Sandbox**
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/01/image.png?resize=662%2C582&ssl=1)<figcaption>Habilitar **Windows Sandbox**</figcaption></figure>Luego de reiniciar el equipo, ya tendremos acceso a la aplicacion.
+![](/wp-content/uploads/2022/01/image.png?resize=662%2C582&ssl=1)
+Habilitar **Windows Sandbox**
+
+Luego de reiniciar el equipo, ya tendremos acceso a la aplicacion.
 
 ## Uso
 
@@ -66,7 +62,7 @@ Una vez que hemos finalizado nuestras pruebas, y previa confirmacion, cerramos e
 
 ## Configuracion avanzada
 
-En [este post](https://blog.rodrigojuarez.com/2022/01/28/configuracion-avanzada-de-windows-sandbox/) podemos ver ademas como crear archivos de configuracion.
+En [este post](/2022/01/28/configuracion-avanzada-de-windows-sandbox/) podemos ver ademas como crear archivos de configuracion.
 
 ## Referencias
 

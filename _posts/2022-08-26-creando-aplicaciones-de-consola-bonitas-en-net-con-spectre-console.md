@@ -1,10 +1,8 @@
 ---
-id: 11673
 title: 'Creando aplicaciones de consola bonitas en .Net con Spectre.Console'
 date: '2022-08-26T17:54:16-03:00'
 author: 'Rodrigo Juarez'
 layout: post
-guid: 'https://blog.rodrigojuarez.com/?p=11673'
 permalink: /2022/08/26/creando-aplicaciones-de-consola-bonitas-en-net-con-spectre-console/
 image: /wp-content/uploads/2022/08/pexels-photo-207580-1568x1176.jpeg
 categories:
@@ -16,9 +14,9 @@ tags:
 
 En varias oportunidades he tenido que crear aplicaciones de consola que van actualizando la pantalla a medida que va pasando el tiempo o sucede algo, termino teniendo cosas como en la siguiente captura de pantalla
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/image.png?resize=418%2C538&ssl=1)</figure>Tratando de mejorar esto, podemos reformatear la informacion y utilizar un `Console.Clear();` para repintar la pantalla, lo cual nos da una salida como la siguiente
+![](/wp-content/uploads/2022/08/image.png?resize=418%2C538&ssl=1)Tratando de mejorar esto, podemos reformatear la informacion y utilizar un `Console.Clear();` para repintar la pantalla, lo cual nos da una salida como la siguiente
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/image-1.png?resize=335%2C130&ssl=1)</figure>El problema surge cuando es mucha la informacion que queremos presentar y el armado de la pantalla se vuelve rapidamente muy complicado
+![](/wp-content/uploads/2022/08/image-1.png?resize=335%2C130&ssl=1)El problema surge cuando es mucha la informacion que queremos presentar y el armado de la pantalla se vuelve rapidamente muy complicado
 
 Para facilitar este proceso, podemos recurrir a [Spectre.Console](https://spectreconsole.net/), que nos permitira crear aplicaciones de consola mucho mas bonitas
 
@@ -26,12 +24,11 @@ Para facilitar este proceso, podemos recurrir a [Spectre.Console](https://spectr
 
 Solo es necesario agregar una referencia al paquete NuGet de Spectre.Console.
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/image-2.png?resize=782%2C340&ssl=1)</figure>## Uso
+![](/wp-content/uploads/2022/08/image-2.png?resize=782%2C340&ssl=1)## Uso
 
 Una de las funcionalidades disponibles es el uso de [Markup](https://spectreconsole.net/markup), el cual permite enviar texto enriquecido a la consola, como puede verse en el siguiente ejemplo
 
 ```
-<pre class="wp-block-code">```
         string color;
         switch (loadPercentage)
         {
@@ -48,12 +45,10 @@ Una de las funcionalidades disponibles es el uso de [Markup](https://spectrecons
 
         AnsiConsole.Markup($"CPU usage [{color}]{loadPercentage}[/]%");
 ```
-```
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/image-3.png?resize=406%2C129&ssl=1)</figure>Tambien podemos crear widgets como una [Table](https://spectreconsole.net/widgets/table) con el siguiente codigo
+![](/wp-content/uploads/2022/08/image-3.png?resize=406%2C129&ssl=1)Tambien podemos crear widgets como una [Table](https://spectreconsole.net/widgets/table) con el siguiente codigo
 
 ```
-<pre class="wp-block-code">```
         // Create a table
         var table = new Table();
 
@@ -67,14 +62,12 @@ Una de las funcionalidades disponibles es el uso de [Markup](https://spectrecons
         // Render the table to the console
         AnsiConsole.Render(table);
 ```
-```
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/image-4.png?resize=343%2C196&ssl=1)</figure>Otra funcionalidad muy interesante, son los componentes [Live](https://spectreconsole.net/live/) que nos permiten modificar solo una parte de la informacion mostrada, sin necesidad de reescribir toda la pantalla.
+![](/wp-content/uploads/2022/08/image-4.png?resize=343%2C196&ssl=1)Otra funcionalidad muy interesante, son los componentes [Live](https://spectreconsole.net/live/) que nos permiten modificar solo una parte de la informacion mostrada, sin necesidad de reescribir toda la pantalla.
 
 Vemos en el siguiente codigo como usar un [Live-Display](https://spectreconsole.net/live/live-display) con una tabla, y luego usamos el contexto para refrescar la pantalla
 
 ```
-<pre class="wp-block-code">```
 AnsiConsole.Live(computerInfo.Table).Start(ctx =>
 {
     do
@@ -89,14 +82,11 @@ AnsiConsole.Live(computerInfo.Table).Start(ctx =>
     } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
 });
 ```
-```
 
 Dentro de nuestro metodo `GenerateFormattedOutput` actualizaremos la tabla de la siguiente manera
 
 ```
-<pre class="wp-block-code">```
 Table.UpdateCell(0, 1, $"[{color}]{loadPercentage}[/]%");
-```
 ```
 
 ## Codigo de ejemplo
@@ -107,4 +97,4 @@ Pueden acceder a un proyecto en el siguiente [repositorio de github](https://git
 
 Como pueden ver, es muy sencillo de utilizar, yo aqui solo he mencionado funcionalidad basica, pero en el sitio del proyecto pueden ver todos los casos de uso, y pantallas mostrando gran cantidad de informacion y otros controles
 
-<figure class="wp-block-image size-full">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2022/08/image-5.png?resize=782%2C630&ssl=1)</figure>
+![](/wp-content/uploads/2022/08/image-5.png?resize=782%2C630&ssl=1)
