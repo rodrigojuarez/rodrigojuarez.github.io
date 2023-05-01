@@ -34,17 +34,17 @@ Para enviar nuestra solicitud, podemos utilizar cualquier cliente HTTP, como Pos
 
 Se puede ver en la siguiente imagen que luego de colocar la direccion <https://api.thecatapi.com/v1/images/search?limit=10> (1) y presionar el boton Send o Enviar (2) obtenemos la respuesta en formato JSON (3)
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2023/02/image.png?resize=782%2C404&ssl=1)</figure>La respuesta es un conjunto de imagenes, en las que cada elemento tiene un identificador unico (id) la ubicacion de la imagen en internet (url), y el ancho (width) y alto (height) de la misma.
+![](/wp-content/uploads/2023/02/image.png?resize=782%2C404&ssl=1)La respuesta es un conjunto de imagenes, en las que cada elemento tiene un identificador unico (id) la ubicacion de la imagen en internet (url), y el ancho (width) y alto (height) de la misma.
 
 En esta misma api, si queremos ver todas las razas (breeds) disponibles, podemos realizar una llamada a <https://api.thecatapi.com/v1/breeds>
 
 Podemos entonces ver en la imagen detalles de las razas disponibles en la API, por ejemplo, Siameses, que usa un identificador “siam”
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2023/02/image-1.png?resize=782%2C363&ssl=1)</figure>Con esta nueva informacion, podemos hacer una nueva llamada, para obtener gatos solo de la raza siames: [https://api.thecatapi.com/v1/images/search?breed\_ids=siam](https://api.thecatapi.com/v1/images/search?breed_ids=siam)
+![](/wp-content/uploads/2023/02/image-1.png?resize=782%2C363&ssl=1)Con esta nueva informacion, podemos hacer una nueva llamada, para obtener gatos solo de la raza siames: [https://api.thecatapi.com/v1/images/search?breed\_ids=siam](https://api.thecatapi.com/v1/images/search?breed_ids=siam)
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2023/02/image-2.png?resize=782%2C373&ssl=1)</figure>Notese que podemos utilizar cualquiera de los valores devueltos como “url” y colocandolo en nuestro navegador de internet, podremos ver la imagen.
+![](/wp-content/uploads/2023/02/image-2.png?resize=782%2C373&ssl=1)Notese que podemos utilizar cualquiera de los valores devueltos como “url” y colocandolo en nuestro navegador de internet, podremos ver la imagen.
 
-<figure class="wp-block-image size-large">![](https://i0.wp.com/blog.rodrigojuarez.com/wp-content/uploads/2023/02/image-3.png?resize=782%2C668&ssl=1)</figure>Tengamos en cuenta que este es un post introductorio y que el verdadero poder de las APIs sera aprovechado cuando podamos procesar y utilizar la respuesta en nuestros propios programas con nuestro lenguaje preferido.
+![](/wp-content/uploads/2023/02/image-3.png?resize=782%2C668&ssl=1)Tengamos en cuenta que este es un post introductorio y que el verdadero poder de las APIs sera aprovechado cuando podamos procesar y utilizar la respuesta en nuestros propios programas con nuestro lenguaje preferido.
 
 Intencionalmente he dejado de lado muchos temas que seran explicados luego, como REST, verbos, etc.
 
