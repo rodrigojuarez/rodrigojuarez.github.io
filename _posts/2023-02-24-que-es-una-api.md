@@ -16,7 +16,7 @@ Las APIs están diseñadas para proporcionar una interfaz clara y bien definida 
 
 Que significa esto en la practica? A continuacion les voy a mostrar un ejemplo de una API que esta disponibles publicamente para que cualquier desarrollador la pueda utilizar y que devuelve informacion de uno de los temas que son la razon de existir de internet, si, acertaron, [una api de gatos](https://thecatapi.com/)!
 
-Y como funciona esta API? Como otras APIs REST, recibe solicitudes por medio de parametros o en [formato JSON](https://blog.rodrigojuarez.com/2023/02/24/que-es-json/) y responde de acuerdo a nuestra consulta con una respuesta tambien en [formato JSON](https://blog.rodrigojuarez.com/2023/02/24/que-es-json/).
+Y como funciona esta API? Como otras APIs REST, recibe solicitudes por medio de parametros o en [formato JSON](/2023/02/24/que-es-json/) y responde de acuerdo a nuestra consulta con una respuesta tambien en [formato JSON](/2023/02/24/que-es-json/).
 
 La [documentacion de la api](https://developers.thecatapi.com/) nos indica que una solicitud enviada a la siguiente direccion nos devolvera la informacion de 10 gatos al azar <https://api.thecatapi.com/v1/images/search?limit=10>
 
