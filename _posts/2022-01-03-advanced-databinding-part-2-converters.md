@@ -94,7 +94,7 @@ Notar que hemos asignado una clave al converter, lo que nos permite referenciarl
 	VerticalOptions="CenterAndExpand" />
 ```
 
-El control **Entry** no sabe nada del converter, pero el boton si, por medio del enlace a la propiedad **IsEnabled**, utilizando el Path a **Text.Length** (cuantos caracteres tiene el texto). Para mas informacion sobre **Binding Paths**, ver el primer post de esta serie: [Paths](https://blog.rodrigojuarez.com/2021/12/29/11531/).
+El control **Entry** no sabe nada del converter, pero el boton si, por medio del enlace a la propiedad **IsEnabled**, utilizando el Path a **Text.Length** (cuantos caracteres tiene el texto). Para mas informacion sobre **Binding Paths**, ver el primer post de esta serie: [Paths](/2021/12/29/11531/).
 
 Finalmente, el enlace invoca al converter. Le envia el numero de caracteres, y si no es cero, devuelve **true** habilitando el boton, sino devuelve **false**, deshabilitandolo.
 

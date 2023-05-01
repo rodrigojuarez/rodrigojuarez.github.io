@@ -29,7 +29,7 @@ On the first start, we can select the connection type to our Azure Storage.
 
 ## Access to local emulator
 
-If we have configured the [local emulator](https://blog.rodrigojuarez.com/2020/12/03/azure-storage-emulator-for-development-in-windows-10/) (Azurite), we can connect using the *Open Connect Dialog* icon.
+If we have configured the [local emulator](2020/12/03/azure-storage-emulator-for-development-in-windows-10/) (Azurite), we can connect using the *Open Connect Dialog* icon.
 
 ![](/wp-content/uploads/2020/12/image-12.png?resize=439%2C442&ssl=1)And then the *Attach to a local emulator* option.
 

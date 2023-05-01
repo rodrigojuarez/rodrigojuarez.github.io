@@ -52,7 +52,7 @@ Esto iniciara el proceso de instalacion, como se puede ver en la siguiente captu
 
 ![](/wp-content/uploads/2022/07/image-6.png?resize=782%2C362&ssl=1)Si abrimos el instalador, podemos ver que se instalaron correctamente los flujos deseados
 
-![](/wp-content/uploads/2022/07/image-7.png?resize=782%2C451&ssl=1)- - - - - -
+![](/wp-content/uploads/2022/07/image-7.png?resize=782%2C451&ssl=1)
 
 En un proximo post, voy a agregar informacion sobre como se puede automatizar aun mas el proceso y ademas como podemos utilizarlo junto a [Windows Sandbox](/2022/01/28/ejecutar-aplicaciones-en-forma-segura-con-windows-sandbox/) para crear rapidamente entornos de desarrollo repetibles y que se encuentran siempre en el mismo estado incial.
 

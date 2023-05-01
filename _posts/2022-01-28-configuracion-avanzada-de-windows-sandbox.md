@@ -15,7 +15,7 @@ tags:
     - 'Windows Sandbox'
 ---
 
-En un [post anterior](https://blog.rodrigojuarez.com/2022/01/28/ejecutar-aplicaciones-en-forma-segura-con-windows-sandbox/) comento como instalar y la utilizacion basica de **Windows Sandbox.**
+En un [post anterior](/2022/01/28/ejecutar-aplicaciones-en-forma-segura-con-windows-sandbox/) comento como instalar y la utilizacion basica de **Windows Sandbox.**
 
 Si comenzamos a utilizarlo habitualmente, veremos que debido a la reinicializacion total, estaremos repitiendo ciertos pasos cada vez que iniciamos la aplicacion.
 
