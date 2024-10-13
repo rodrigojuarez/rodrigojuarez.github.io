@@ -239,6 +239,6 @@ Para más detalles sobre el formato necesario y las opciones disponibles en tu e
 La introducción de las "Salidas Estructuradas" en las versiones de agosto de 2024 de GPT-4o y GPT-4o Mini marca un avance significativo en el contenido generado por IA. Al utilizar esquemas JSON para definir los formatos de respuesta, los desarrolladores pueden lograr salidas más precisas, consistentes y confiables. Esta mejora simplifica la integración con otros sistemas y reduce la necesidad de un extenso análisis de datos. A medida que la tecnología de IA progresa, aprovechar características como las "Salidas Estructuradas" será esencial para maximizar la eficiencia y efectividad. Te animamos a explorar estas nuevas capacidades utilizando los recursos proporcionados.
 
 # Recursos
-[How to use structured outputs with Azure OpenAI Service – Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs?tabs=python-secure)
-[Announcing a new OpenAI feature for developers on Azure  | Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/announcing-a-new-openai-feature-for-developers-on-azure/)
-[Validating OpenAPI and JSON Schema (json-schema.org)](https://json-schema.org/blog/posts/validating-openapi-and-json-schema#light-scheme-icon)
+- [How to use structured outputs with Azure OpenAI Service – Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs?tabs=python-secure)
+- [Announcing a new OpenAI feature for developers on Azure  | Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/announcing-a-new-openai-feature-for-developers-on-azure/)
+- [Validating OpenAPI and JSON Schema (json-schema.org)](https://json-schema.org/blog/posts/validating-openapi-and-json-schema#light-scheme-icon)
